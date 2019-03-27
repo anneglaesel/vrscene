@@ -2,7 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src='https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js'> </script>
-  AFRAME.registerComponent('change-color-on-click', {
+  <script> AFRAME.registerComponent('change-color-on-click', {
     init: function () {
     var COLORS = [
     'pink',
@@ -20,7 +20,9 @@
     });
     }
     });
+    </script>
   </head>
+ 
   <body>
     <!---Empieza Escena VR--->
     <a-scene>
@@ -32,7 +34,7 @@
       <a-camera>
         <a-cursor fuse="true"></a-cursor>
       </a-camera>
-      <a-box position="-8 0 -3.5" animation="startEvents: click; property:rotation; dur:5000; to:360 360 360;" color="purple" sound="src: #a1" ; on: click"></a-box>
+      <a-box position="-8 0 -3.5" animation="startEvents: click; change-color-on-click=''; property:rotation; dur:5000; to:360 360 360;" color="purple" sound="src: #a1" ; on: click"></a-box>
     </a-scene>
   </body>
 </html>
