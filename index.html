@@ -34,28 +34,18 @@
   <body>
     <!---Empieza Escena VR--->
     <a-scene>
-      <a-assets>
-        <audio id="a1" src="archive/mp3/a1.mp3" preload="auto"></audio>
-        <img id="bg" src="https://farm2.staticflickr.com/1864/43493410025_ba0c314a2b_k.jpg">
-      </a-assets>
-     
       <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"></a-entity>
       <a-camera>
         <a-cursor fuse="true"></a-cursor>
       </a-camera>
      <a-entity environment="preset: forest"></a-entity>
-     
-      
       
      <a-box position="-7 2 1" color="white" change-color-on-click=""> </a-box>
-     <a-box position="-7 2 0" color="white" change-color-on-click=""> https://www.elimparcial.es/fotos/1/mona_lisa_gioconda1.jpg</a-box>>
+     <a-box position="-7 2 0" color="white" change-color-on-click=""> </a-box>>
      <a-box position="-7 1 1" color="white" shadow="1" change-color-on-click=""> </a-box>
      <a-box position="-7 1 0" color="white" shadow="1" change-color-on-click=""> </a-box>
-     <a-box position="-7 2 -1" color="white" change-color-on-click=""> </a-box>
-     <a-box position="-7 1 2" color="white" change-color-on-click=""> </a-box>
-     <a-box position="-7 2 2" src="" change-color-on-click=""> </a-box>
-    
-    
+     <a-box position="-7 2 2" color="white" shadow="1" change-color-on-click=""> </a-box>
+     <a-box position="-7 3 3" color="white" shadow="1" change-color-on-click=""> </a-box>
     
     <a-box position="-6 1 -2" click-drag position="0 1.25 -5" rotation="0 45 0" color="#white" shadow
              event-set__enter="_event: mouseenter; color: #green"
