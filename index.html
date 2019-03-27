@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!---Empieza Escena VR--->
+    <a-scene>
+      <a-assets>
+        <audio id="a1" src="archive/a1.mp3" preload="auto"></audio>
+        <img id="bg" src="https://farm9.staticflickr.com/8732/16958613048_bd0d593542_b.jpg">
+      </a-assets>
+      <a-sky src="#bg"></a-sky>
+      <a-camera>
+        <a-cursor fuse="true"></a-cursor>
+      </a-camera>
+      <a-box position="-8 0 -3.5" animation="startEvents: click; property:rotation; dur:5000; to:360 360 360;" color="purple" sound="src: #a1"></a-box>
+    </a-scene>
+  </body>
+</html>
