@@ -3,9 +3,12 @@
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src='https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js'> </script>
   <script> AFRAME.registerComponent('change-color-on-click', {
+    // Could use a schem to preserve the color! then simply change it on update
+    // if clicked?
     init: function () {
     var COLORS = [
     'pink',
+    //'blue',
     'yellow',
     'red',
     'peachpuff',
